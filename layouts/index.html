@@ -21,7 +21,7 @@
         <!-- Main -->
             <div id="main">
 
-                {{ range ( .Paginate (where .Data.Pages "Type" "page")).Pages }}
+                {{ range .Data.Pages.ByWeight }}
                     {{ .Render "page" }}
                 {{ end }}
 
@@ -35,6 +35,7 @@
             <script src="/js/jquery.scrollzer.min.js"></script>
             <script src="/js/skel.min.js"></script>
             <script src="/js/util.js"></script>
+            <script src="/js/publications.js"></script>
             <!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
             <script src="/js/main.js"></script>
 

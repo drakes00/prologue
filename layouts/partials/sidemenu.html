@@ -13,8 +13,8 @@
            <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
     -->
-    <ul>
-        {{ range ( .Paginate (where .Data.Pages "Type" "page")).Pages }}
+    <ul style="list-style: none;">
+        {{ range .Data.Pages.ByWeight }}
             {{ .Render "li" }}
         {{ end }}
     </ul>
