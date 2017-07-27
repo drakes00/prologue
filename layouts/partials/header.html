@@ -4,11 +4,11 @@
     <div class="top">
 
         <!-- Logo -->
-            <div id="logo">
-                <span class="image avatar48"><img src="img/menu-top.jpg" alt="" /></span>
-                <h1 id="title">{{ .Site.Params.name }}</h1>
-                <p>{{ .Site.Params.description }}</p>
-            </div>
+        <div id="logo">
+            <span class="image avatar48"><img src="img/menu-top.jpg" alt="" /></span>
+            <h1 id="title">{{ .Site.Params.name }}</h1>
+            <p>{{ .Site.Params.description }}</p>
+        </div>
 
         {{ partial "sidemenu.html" . }}
 
@@ -17,11 +17,11 @@
     <div class="bottom">
 
         <!-- Social Icons -->
-            <!--<ul class="icons">
-                {{ range .Site.Params.social }}
-                <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
-                {{ end }}
-            </ul>-->
+        <!--<ul class="icons">
+            {{ range .Site.Params.social }}
+            <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+            {{ end }}
+        </ul>-->
 
     </div>
 
